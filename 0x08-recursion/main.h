@@ -1,28 +1,12 @@
-#include "main.h"
-/**
- * wildcmp - compare two strings with possible wildcards
- * @s1: string
- * @s2: string
- * Return:int 0 or 1
- */
-int wildcmp(char *s1, char *s2)
-{
-	if (*s1 == '\0' && *s2 == '\0')
-		return (1);
-	else if (*s1 == '\0' && *s2 == '*')
-		return (wildcmp(s1, (s2 + 1)));
-	else if (*s1 == '\0' || *s2 == '\0')
-		return (0);
-	if (*s1 == *s2)
-		return (wildcmp((s1 + 1), (s2 + 1)));
-	if (*s2 == '*')
-	{
-		if (*(s2 + 1) == '*')
-			return (wildcmp(s1, (s2 + 1)));
-		else if (wildcmp(s1, s2 + 1))
-			return (1);
-		else
-			return (wildcmp(s1 + 1, s2));
-	}
-	return (0);
-}
+#ifndef MAIN_H
+#define MAIN_H
+void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
+int _strlen_recursion(char *s);
+int factorial(int n);
+int _pow_recursion(int x, int y);
+int _sqrt_recursion(int n);
+int is_prime_number(int n);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
+#endif
