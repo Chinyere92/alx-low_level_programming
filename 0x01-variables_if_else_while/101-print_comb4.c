@@ -1,26 +1,25 @@
 #include <stdio.h>
 /**
- * main - main function
- * print number in base 10 using putchar
+ * main - for main
  * Return: 0
  */
 int main(void)
 {
-	int i, j, k;
+	int x, y, z;
 
-	for (i = 0; i <= 7; i++)
+	for (x = 0; x < 8; x++)
 	{
-		for (j = 0; j <= 8; j++)
+		for (y = 0; y < 9; y++)
 		{
-			for (k = 0; k < 9; k++)
+			for (z = 0; z < 10; z++)
 			{
-				if (i < j && j < k)
+				if (x < y && y < z)
 				{
-					putchar('0' + i);
-					putchar('0' + j);
-					putchar('0' + k);
+					putchar(x + '0');
+					putchar(y + '0');
+					putchar(z + '0');
 				}
-				if (i != 8 && i < j && j < k)
+				if (x < y && y < z && x < 7)
 				{
 					putchar(',');
 					putchar(' ');
@@ -29,6 +28,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
