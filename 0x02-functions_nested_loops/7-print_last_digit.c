@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * print_last_digit - last digit
  * @n: number
@@ -7,6 +8,6 @@ int print_last_digit(int n)
 {
 	int m = n % 10;
 
-	printf("%d\n", m);
+	printf("%d", m);
 	return (m);
 }
