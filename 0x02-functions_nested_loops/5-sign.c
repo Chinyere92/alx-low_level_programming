@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_sign - print sigh
  * @n: num to evaluate
