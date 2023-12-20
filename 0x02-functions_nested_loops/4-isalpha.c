@@ -1,5 +1,5 @@
 /**
- *  _islower - checking for lower leter
+ *  _isalpha - checking for lower leter
  *  @c: letter to check
  *  Return: true / false
  */
