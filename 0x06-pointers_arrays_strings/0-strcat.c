@@ -1,18 +1,19 @@
 /**
- * strcat - concat string
+ * _strcat - concat string
  * @dest: to put
  * @src: from
  * Return: dest
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int index = 0, dest_len = 0;
+	int len = strlen(dest);
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
+	while (*src != '\0')
+	{
+		dest[len] = *src;
+		len += 1;
+		src++;
+	}
+	dest[len] = '\0';
 	return (dest);
 }
