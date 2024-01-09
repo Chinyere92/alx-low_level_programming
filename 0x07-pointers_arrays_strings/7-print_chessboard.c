@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_chessboard - print chess board
  * @a: pointer to board
