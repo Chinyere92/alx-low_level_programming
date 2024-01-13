@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - starting point for other function
  * @argc: argument count
