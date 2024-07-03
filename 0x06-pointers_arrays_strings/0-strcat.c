@@ -1,3 +1,4 @@
+#include <string.h>
 /**
  * _strcat - concat string
  * @dest: to put
