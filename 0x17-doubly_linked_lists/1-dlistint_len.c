@@ -4,7 +4,7 @@
  * @h: head of double linked list
  * Return: Total number of Node
  */
-size_t size_t dlistint_len(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int node_total = 0;
 
